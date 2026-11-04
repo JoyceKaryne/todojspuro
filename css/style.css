@@ -1,0 +1,134 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #fce4ec;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #d81b60;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+input, select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+}
+
+input:focus, select:focus {
+    border-color: #d81b60;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #d81b60;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ad1457;
+}
+
+#toolbar {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+#search, #filter {
+    flex: 1;
+}
+
+#search input, #filter select {
+    width: 100%;
+}
+
+#todo-list ul {
+    list-style: none;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    margin-bottom: 10px;
+    background: #fce4ec;
+    border-radius: 8px;
+}
+
+.todo h3 {
+    font-size: 16px;
+    flex: 1;
+    overflow-wrap: anywhere;
+}
+
+.todo button {
+    padding: 8px 10px;
+}
+
+.done {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.done-btn {
+    background: #4caf50;
+}
+
+.remove-btn {
+    background: #e53935;
+}
+
+.edit-btn {
+    background: #777;
+}
+
+@media (max-width: 500px) {
+    .container {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    #toolbar {
+        flex-direction: column;
+    }
+}
